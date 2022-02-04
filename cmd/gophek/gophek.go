@@ -11,5 +11,5 @@ import (
 func main() {
 	flag.Parse()
 
-	gophek.Eval(strings.Join(flag.Args(), ""), os.Stdout)
+	gophek.Eval(strings.Join(flag.Args(), ""), os.Stdin, os.Stdout)
 }
